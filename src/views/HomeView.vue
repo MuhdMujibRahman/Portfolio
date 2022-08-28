@@ -5,7 +5,7 @@ import coffeMaker from '@/assets/coffee-maker.png'
 
 <template>
   <div class="box">
-      <div id="logo">
+      <div id="logo" content="width=device-width, initial-scale=1.0">
         <img :src="image" />
       </div>
       <div id="intro">
@@ -87,6 +87,7 @@ img {
 }
 
 .intro-container {
+  text-align: center;
   display: grid;
 }
 
