@@ -1,17 +1,12 @@
-<template>
-  <header>
-    <div class="container">
-      <nav class="navMenu">
-        <router-link to="/">Home</router-link>
-        <router-link to="">Blog</router-link>
-        <router-link to="">About</router-link>
-        <router-link to="">Work</router-link>
-      <div class="dot"></div>
-    </nav>
-    </div>
-  </header>
-  <router-view></router-view>
+<script setup>
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
+</script>
 
+<template>
+  <Header />
+  <router-view></router-view>
+  <Footer />
 </template>
 
 <style>
