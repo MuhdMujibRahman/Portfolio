@@ -32,7 +32,7 @@
     <style scoped>
     
     .box {
-      margin-top: 5rem;
+      margin-top: .5rem;
       display: grid;
       position: relative;
       grid-template-columns: auto auto auto;
@@ -69,7 +69,7 @@
       height: 10rem;
       background: #e3e3e3;
       border-radius: 25px;
-      box-shadow: 10px 10px;
+      box-shadow: 10px 10px #142d4c;
       text-align: center;
       /* margin-top: 5rem; */
     }
