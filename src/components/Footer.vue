@@ -22,14 +22,14 @@ import linkedin from '@/assets/image/linkedin.png'
         </ul>
         <p>Copyright &copy; 2022</p>
         <ul>
-        <li>
+        <li class="credit">
             <a href="https://www.flaticon.com/free-icons/coffee-maker" title="coffee maker icons">Coffee maker icons created by flatart_icons - Flaticon</a>
         </li>
-        <li>
+        <li class="credit">
             <a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Dave Gandy - Flaticon</a>
         
         </li>
-        <li>
+        <li class="credit">
             <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
         </li>
         </ul>
@@ -172,5 +172,16 @@ body {
     width: 20px;
 }
 
+@media (max-width: 480px) {
+  li.credit {
+    opacity: 0;
+  }
+  .wrapper {
+  left: 0.2rem;
+  }
 
+  p {
+    width: 100%;
+  }
+}
 </style>

@@ -17,8 +17,6 @@ import NavBarMobile from './NavBarMobile.vue';
     },
     methods: {
       handleViewChange() {
-        console.log(window.innerWidth)
-        console.log(window.innerWidth <= 990)
         this.mobileView = window.innerWidth <= 990;
       }
     },

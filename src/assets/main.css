@@ -17,9 +17,29 @@ body {
 }
 
 #app{
-  height:95vh; margin:0;
+  height:100vh; margin:0;
   display: flex;
   flex-direction:column; 
   background: #ececec;
   font-family: "Montserrat", sans-serif;
 }
+@media (max-width: 480px){
+
+  body {
+    width: auto;
+    height:100vh; margin:0;
+    display: flex;
+    flex-direction:column; 
+    background: #ececec;
+    font-family: "Montserrat", sans-serif;
+  }
+  #app{
+    height:100vh; margin:0;
+    display: flex;
+    flex-direction:column; 
+    background: #ececec;
+    font-family: "Montserrat", sans-serif;
+  }
+
+}
+
