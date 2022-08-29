@@ -23,7 +23,27 @@ body {
   background: #ececec;
   font-family: "Montserrat", sans-serif;
 }
-@media (max-width: 480px){
+
+@media only screen and (max-width: 380px) and (max-height: 670px) {
+
+  body {
+    width: auto;
+    height:100vh; margin:0;
+    display: flex;
+    flex-direction:column; 
+    background: #ececec;
+    font-family: "Montserrat", sans-serif;
+  }
+  #app{
+    height:100vh; margin:0;
+    display: flex;
+    flex-direction:column; 
+    background: #ececec;
+    font-family: "Montserrat", sans-serif;
+  }
+
+}
+@media only screen and (max-width: 480px) and (min-width: 381px){
 
   body {
     width: auto;

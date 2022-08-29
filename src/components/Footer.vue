@@ -174,7 +174,7 @@ body {
 
 @media (max-width: 480px) {
   li.credit {
-    opacity: 0;
+    display: none;
   }
   .wrapper {
   left: 0.2rem;

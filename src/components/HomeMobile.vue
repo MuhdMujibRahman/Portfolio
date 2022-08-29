@@ -39,7 +39,7 @@
       width: fit-content;
       height: 20rem;
       border-left-width: 100rem;
-      left:-30.5rem;
+      left:-30.9rem;
       gap: 20px;
     
     }
@@ -112,6 +112,21 @@
     #title {
       grid-row: 3
     }
+@media only screen and (max-width: 480px) and (min-width: 381px){
+
+    .box {
+      margin-top: 9rem;
+      display: grid;
+      position: relative;
+      grid-template-columns: auto auto auto;
+      width: fit-content;
+      height: 20rem;
+      border-left-width: 100rem;
+      left:-30.9rem;
+      gap: 20px;
     
+
+    }
+}
 </style>
     
