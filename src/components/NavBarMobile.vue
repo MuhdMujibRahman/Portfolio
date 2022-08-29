@@ -205,6 +205,22 @@ ul#navbar li a:hover{
 	color: #ffffff;
 	background: #9fd3c7;
 }
+@media only screen and (max-width: 480px) and (min-width: 381px){
+
+.box {
+  margin-top: 9rem;
+  display: grid;
+  position: relative;
+  grid-template-columns: auto auto auto;
+  width: fit-content;
+  height: 20rem;
+  border-left-width: 100rem;
+  left:-30.9rem;
+  gap: 20px;
+
+
+}
+}
 @media (max-width: 480px){
 	#nav-toggle.active{
 		position: absolute;
@@ -253,6 +269,17 @@ ul#navbar li a:hover{
 
 }
 @media (min-width: 481px) and (max-width: 767px){
+	.navMenu {
+		display: flex;
+		min-height: 0rem;
+		position: absolute;
+		width: 150px;
+		top: 1.7rem;
+		left: 16.5rem;
+	/* -webkit-transform: translate(-50%, -50%); */
+		transform: translate(-50%, -50%);
+	}
+
 	#nav-toggle.active{
 		position: absolute;
 		animation:rise 0.3s ease-in-out;
@@ -261,17 +288,17 @@ ul#navbar li a:hover{
 	#nav-toggle{
 		animation:drop 1s ease-in-out;
 		top: 40%;
-		left: 45%;
+		left: 5%;
 		display: block;
 	}
     #nav.active{
-        transition: opacity 9s ease-in-out;
-        opacity: 10;
+        transition: top .5s ease-in-out;
+        top: .1rem;
     }
 	#nav{
 
-        transition: opacity 9s ease-in-out;
-        opacity: 0;
+        transition: top .5s ease-in-out;
+        top: -5.5rem;
     }
     
 
@@ -288,23 +315,48 @@ ul#navbar li a:hover{
 
 }
 @media (min-width: 768px) and (max-width: 992px){
-	#nav-toggle{
-		left: 0;
-		display: block;
-		border-radius: 0;
+	.navMenu {
+		display: flex;
+		min-height: 0rem;
+		position: absolute;
+		width: 150px;
+		top: 1.7rem;
+		left: 21.5rem;
+	/* -webkit-transform: translate(-50%, -50%); */
+		transform: translate(-50%, -50%);
 	}
-	#nav{
-        display: block;
-        transition: opacity 9s ease-out;
-        opacity: 10;
+
+	#nav-toggle.active{
+		position: absolute;
+		animation:rise 0.3s ease-in-out;
+		top: 11%;
+	}
+	#nav-toggle{
+		animation:drop 1s ease-in-out;
+		top: 40%;
+		left: 5%;
+		display: block;
+	}
+    #nav.active{
+        transition: top .5s ease-in-out;
+        top: .1rem;
     }
+	#nav{
+
+        transition: top .5s ease-in-out;
+        top: -5.5rem;
+    }
+    
 
 	ul#navbar{
-		margin-left: 16px;
-		animation: slide 0.3s ease;
+		margin-top: 125px;
+		padding-left: 0;
 	}
 	ul#navbar li{
-		margin-top: 10px;
+		display: block;
+	}
+	ul#navbar li a{
+		text-align: center;
 	}
 }
 @media (min-width: 992px){

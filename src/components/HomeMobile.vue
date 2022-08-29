@@ -128,5 +128,113 @@
 
     }
 }
+
+@media (min-width: 481px) and (max-width: 767px){
+  .box {
+      margin-top: 5rem;
+      display: grid;
+      position: relative;
+      grid-template-columns: auto auto auto;
+      width: 100vh;
+      height: 20rem;
+      border-left-width: 100rem;
+      left:-35rem;
+      gap: 20px;
+    
+
+  }
+  .intro-container {
+      text-align: center;
+      display: grid;
+    }
+  div > #intro {
+
+    /* margin-right: 35rem; */
+      left: 36.9rem;
+      grid-row-start: 1;
+      grid-column:3;
+      width: 25rem;
+      height: 7rem;
+      background: #e3e3e3;
+      border-radius: 25px;
+      box-shadow: 10px 10px #142d4c;
+      text-align: center;
+  /* margin-top: 5rem; */
+  }
+  #icon {
+      margin-top: 10px;
+      margin-left: 15px;
+      width: 40px;
+      height: 40px;
+      grid-row: 3;
+    }
+        
+    #title {
+      grid-row: 3
+    }
+    div #logo {
+      grid-row-start: 1;
+      grid-column-end: 3;
+      /* right: 47rem; */
+      left: 37rem;
+      width: 150px;
+      height: 150px;
+      top: -1.5rem;
+      }
+}
+@media (min-width: 768px) and (max-width: 992px){
+  .box {
+      margin-top: 5rem;
+      display: grid;
+      position: relative;
+      grid-template-columns: auto auto auto;
+      width: 100vh;
+      height: 20rem;
+      border-left-width: 100rem;
+      left:-30rem;
+      gap: 20px;
+    
+
+  }
+  .intro-container {
+      text-align: center;
+      display: grid;
+    }
+  div > #intro {
+
+    /* margin-right: 35rem; */
+      left: 36.9rem;
+      grid-row-start: 1;
+      grid-column:3;
+      width: 25rem;
+      height: 7rem;
+      background: #e3e3e3;
+      border-radius: 25px;
+      box-shadow: 10px 10px #142d4c;
+      text-align: center;
+  /* margin-top: 5rem; */
+  }
+  #icon {
+      margin-top: 10px;
+      margin-left: 15px;
+      width: 40px;
+      height: 40px;
+      grid-row: 3;
+    }
+        
+    #title {
+      grid-row: 3
+    }
+    div #logo {
+      grid-row-start: 1;
+      grid-column-end: 3;
+      /* right: 47rem; */
+      left: 37rem;
+      width: 150px;
+      height: 150px;
+      top: -1.5rem;
+      }
+}
+
 </style>
     
