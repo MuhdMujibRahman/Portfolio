@@ -91,4 +91,24 @@
   opacity: 1;
 }
 
+@media only screen and (min-width: 992px){
+  .container {
+    margin: 25px;
+    width: 100rem;
+    height: 5rem;
+    left:-19rem;
+    /* Setup */
+    position: relative;
+}
+}
+@media only screen and (min-width: 1200px){
+  .container {
+    margin: 25px;
+    width: 100rem;
+    height: 5rem;
+    left:-15rem;
+    /* Setup */
+    position: relative;
+}
+}
 </style>

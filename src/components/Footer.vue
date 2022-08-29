@@ -1,6 +1,8 @@
 <script setup>
 import github from '@/assets/image/github-logo.png'
+import githubInvert from '@/assets/image/github.png'
 import linkedin from '@/assets/image/linkedin.png'
+import linkedInvert from '@/assets/image/linkedin_2.png'
 </script>
 <template>
     <footer>
@@ -8,14 +10,38 @@ import linkedin from '@/assets/image/linkedin.png'
             <li class="icon linkedin">
               <a target="_blank" href="https://www.linkedin.com/in/mujibnizar/">
                 <span class="tooltip">Linkedin</span>
-                <span><img class="icon linkedin" :src="linkedin" href="https://www.linkedin.com/in/mujibnizar/"></span>
+                <span>
+                  <img 
+                  @mouseover="hoverEventLinkedin"
+                  @mouseleave="hoverEventLinkedin"
+                  v-show="!hoverLinkedin"
+                  class="icon linkedin" 
+                  :src="linkedin" 
+                  href="https://www.linkedin.com/in/mujibnizar/">
+                  
+                  <img  @mouseover="hoverEventLinkedin"
+                        @mouseleave="hoverEventLinkedin" 
+                        v-show="hoverLinkedin"
+                        class="icon linkedin" 
+                        :src="linkedInvert" 
+                        href="https://www.linkedin.com/in/mujibnizar/">
+                </span>
               </a>
 
             </li>
             <li class="icon github">
               <a target="_blank" href="https://github.com/MuhdMujibRahman">
                 <span class="tooltip">Github</span>
-                <span><img class="icon github" :src="github"></span>
+                <span><img 
+                  @mouseover="hoverEventGit"
+                  @mouseleave="hoverEventGit"
+                  v-show="!hoverGit"
+                  class="icon github" :src="github">
+                  <img @mouseover="hoverEventGit"
+                        @mouseleave="hoverEventGit" 
+                        v-show="hoverGit"
+                        class="icon github" :src="githubInvert"></span>
+  
               </a>
 
             </li>
@@ -43,8 +69,20 @@ export default {
     data () {
         return {
             github: github,
-            linkedin: linkedin
+            linkedin: linkedin,
+            linkedInvert: linkedInvert,
+            githubInvert: githubInvert,
+            hoverGit: false,
+            hoverLinkedin: false,
         }
+    },
+    methods: {
+      hoverEventGit(){
+        this.hoverGit = !this.hoverGit;
+      },
+      hoverEventLinkedin(){
+        this.hoverLinkedin = !this.hoverLinkedin;
+      }
     }
 }
 
@@ -106,7 +144,12 @@ body {
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
+.githubInverted {
+  display: none;
+}
+.linkedinInverted {
+  display: none;
+}
 .wrapper .tooltip {
   position: absolute;
   top: 0;
