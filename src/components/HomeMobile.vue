@@ -41,7 +41,6 @@
       border-left-width: 100rem;
       left:-30.9rem;
       gap: 20px;
-      box-shadow: 10px 10px #142d4c;
     
     }
     
@@ -71,7 +70,7 @@
       height: 15rem;
       background: #e3e3e3;
       border-radius: 25px;
-      box-shadow: 10px 10px;
+      box-shadow: 10px 10px #142d4c;
       text-align: center;
       /* margin-top: 5rem; */
     }
