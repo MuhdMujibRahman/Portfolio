@@ -98,8 +98,8 @@ img {
 }
 
 #icon {
-  margin-top: 15px;
-  margin-left: 25px;
+  margin-top: 17px;
+  margin-left: 15px;
   width: 60px;
   height: 60px;
   grid-row: 3;
