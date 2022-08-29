@@ -41,7 +41,7 @@
       border-left-width: 100rem;
       left:9rem;
       gap: 20px;
-    
+      box-shadow: 10px 10px #142d4c;
     }
     
     .box > div {
