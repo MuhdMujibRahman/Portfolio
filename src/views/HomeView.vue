@@ -1,6 +1,6 @@
 <script setup>
-import image from '@/assets/memoji.png'
-import coffeMaker from '@/assets/coffee-maker.png'
+import image from '@/assets/image/memoji.png'
+import coffeMaker from '@/assets/image/coffee-maker.png'
 </script>
 
 <template>
@@ -32,13 +32,14 @@ export default {
 <style scoped>
 
 .box {
+  margin-top: 5rem;
   display: grid;
   position: relative;
   grid-template-columns: auto auto auto;
   width: 70rem;
   height: 20rem;
   border-left-width: 100rem;
-  left:5rem;
+  left:9rem;
   gap: 20px;
 
 }
@@ -52,30 +53,35 @@ export default {
 
 div #logo {
   grid-row-start: 1;
-  grid-column-end: 2;
-  margin-left: 10rem;
+  grid-column-end: 3;
+  /* right: 47rem; */
+  left: 34rem;
   width: 250px;
   height: 250px;
-}
+  }
 
-div #intro {
-  margin-right: 35rem;
-  grid-row-start: 1;
+div > #intro {
+  /* margin-right: 35rem; */
+  left: 17rem;
+  grid-row-start: 2;
+  grid-column-end: 3;
   width: 50rem;
   height: 10rem;
   background: #e3e3e3;
   border-radius: 25px;
   box-shadow: 10px 10px;
   text-align: center;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 
 p {
+  left:4rem;
   color: #142d4c;
   font-family: 'Roboto', 'Helvetica';
 }
 
 h1 {
+  left:1rem;
   color: #142d4c;
   font-family: 'Roboto', 'Helvetica';
   font-weight: 999;

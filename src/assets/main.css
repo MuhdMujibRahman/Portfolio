@@ -1,5 +1,6 @@
 @import "./base.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +9,17 @@
 }
 
 body {
+  height:100vh; margin:0;
+  display: flex;
+  flex-direction:column; 
   background: #ececec;
   font-family: "Montserrat", sans-serif;
 }
 
 #app{
+  height:95vh; margin:0;
+  display: flex;
+  flex-direction:column; 
+  background: #ececec;
   font-family: "Montserrat", sans-serif;
 }
