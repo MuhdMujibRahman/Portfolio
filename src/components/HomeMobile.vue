@@ -271,7 +271,6 @@ export default {
       .wrapper {
           height: 15vh;
           width: 39vh;
-          left:-3.5rem;
           /*This part is important for centering*/
           display: grid;
           top:-5rem;
@@ -291,7 +290,7 @@ export default {
     }
     .wrapper {
       transition: left .9s ease-in-out;
-      left: -4rem;
+      left: -5rem;
 
     }
     .wrapper.active {
