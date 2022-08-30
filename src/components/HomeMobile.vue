@@ -258,7 +258,7 @@ export default {
     div#intro {
 
       /* margin-right: 35rem; */
-      left: 13.5rem;
+      left: 14.5rem;
       grid-row-start: 2;
       grid-column-end: 3;
       width: 15rem;
