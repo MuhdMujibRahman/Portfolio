@@ -1,6 +1,8 @@
 <template>
 <header>
-  <NavBarMobile id="navigation-icon" v-if="mobileView"/>
+  <NavBarMobile 
+  @nav-click="$emit('toggle-nav-bar')"
+  id="navigation-icon" v-if="mobileView"/>
   <NavBarDesktop v-if="!mobileView"/>
 </header>
 </template>
@@ -9,6 +11,7 @@
 import NavBarDesktop from './NavBarDesktop.vue';
 import NavBarMobile from './NavBarMobile.vue';
   export default {
+    emits: ['toggle-nav-bar'],
     data() {
         return {
             mobileView: false,

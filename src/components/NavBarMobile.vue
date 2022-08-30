@@ -3,7 +3,8 @@
 		<a href="#" id="nav-toggle" 
         :class="{ active: isActive }" 
         @click="isActive = !isActive, 
-        showNavBar = !showNavBar"><span></span></a>
+        showNavBar = !showNavBar"
+		v-on:click="$emit('nav-click')"><span></span></a>
 		</div>
         <transition name="fade" mode="out-in">
             <div id="nav" :class="{ active : showNavBar}">
@@ -23,6 +24,8 @@
 <script>
 
 export default {
+	name: 'NavBarMobile',
+	emits:['nav-click'],
     data(){
         return {
             showNavBar: false,

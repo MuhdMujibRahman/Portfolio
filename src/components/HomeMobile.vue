@@ -5,7 +5,9 @@
     
     <template>
       <div class="box">
-          <div id="logo" content="width=device-width, initial-scale=1.0">
+          <div
+          :class="{ active: navBarIsActive }"
+           id="logo" content="width=device-width, initial-scale=1.0">
             <img :src="image" />
           </div>
           <div id="intro">
@@ -18,8 +20,12 @@
       </div>
     </template>
     
-    <script>
-    export default {
+<script>
+export default {
+  name: 'HomeMobile',
+  props: {
+      navBarIsActive: Boolean,
+    },
       data (){
         return {
           image: image,
@@ -27,7 +33,7 @@
         }
       }
     }
-    </script>
+</script>
     
 <style scoped>
     
@@ -52,12 +58,20 @@
     }
     
     div #logo {
+      transition: left  .9s ease-in-out, opacity .9s;
+      opacity: 10;
       grid-row-start: 1;
       grid-column-end: 3;
       /* right: 47rem; */
       left: 37rem;
       width: 150px;
       height: 150px;
+      }
+    div#logo.active {
+      transition: left .9s ease-in-out, opacity .9s;;
+      left: 39rem;
+      opacity: .5;
+
       }
     
     div > #intro {
