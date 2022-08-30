@@ -5,11 +5,16 @@
     
     <template>
       <div class="box">
-          <div
-          :class="{ active: navBarIsActive }"
-           id="logo" content="width=device-width, initial-scale=1.0">
+        <div class="wrapper" :class="{ active: navBarIsActive }">
+          <div class="logo-container">
+            <div id="logo" content="width=device-width, initial-scale=1.0">
             <img :src="image" />
           </div>
+          </div>
+          <div class="typing-demo">
+            I have python for breakfast
+          </div>
+        </div>
           <div id="intro">
             <div class="intro-container">
             <p>Coming Soon !</p>
@@ -36,7 +41,35 @@ export default {
 </script>
     
 <style scoped>
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
     
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+    .wrapper {
+      height: 15vh;
+      width: 39vh;
+      left:-2rem;
+      /*This part is important for centering*/
+      display: grid;
+      top:-3.5rem;
+      place-items: center;
+    }
+
+
+    .logo-container { 
+      grid-row-start: 1;
+    }
+
+
+
     .box {
       margin-top: 5rem;
       display: grid;
@@ -57,7 +90,7 @@ export default {
       margin-top: 1rem;
     }
     
-    div #logo {
+    div#logo {
       transition: left  .9s ease-in-out, opacity .9s;
       opacity: 10;
       grid-row-start: 1;
@@ -69,10 +102,10 @@ export default {
       }
 
     
-    div > #intro {
+    div#intro {
 
       /* margin-right: 35rem; */
-      left: 34rem;
+      left: 17.5rem;
       grid-row-start: 2;
       grid-column-end: 3;
       width: 15rem;
@@ -81,7 +114,7 @@ export default {
       border-radius: 25px;
       box-shadow: 10px 10px #142d4c;
       text-align: center;
-      /* margin-top: 5rem; */
+      margin-top: 5rem;
     }
     
     p {
@@ -121,12 +154,87 @@ export default {
     #title {
       grid-row: 3
     }
-
-@media only screen and (max-width: 380px){
-
+@media only screen and (max-width: 360px){
+  .box {
+      margin-top: 5rem;
+      display: grid;
+      position: relative;
+      grid-template-columns: auto auto auto;
+      width: fit-content;
+      height: 20rem;
+      border-left-width: 100rem;
+      left:-32.9rem;
+      gap: 20px;
+    
+    }
   div#logo.active {
       transition: left .9s ease-in-out;
       left: 39rem;
+
+    }
+    .typing-demo {
+      margin-top: 2rem;
+      left: 37rem;
+      grid-row-start: 2;
+      width: 27ch;
+      animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-family: monospace;
+      font-size: 1rem;
+   }
+   .wrapper {
+      transition: left .9s ease-in-out;
+      left: -1rem;
+
+    }
+    .wrapper.active {
+      transition: left .9s ease-in-out;
+      left: 4rem;
+
+    }
+  
+}
+
+@media only screen and (max-width: 380px) and (min-width: 361px){
+  .box {
+      margin-top: 5rem;
+      display: grid;
+      position: relative;
+      grid-template-columns: auto auto auto;
+      width: fit-content;
+      height: 20rem;
+      border-left-width: 100rem;
+      left:-30.7rem;
+      gap: 20px;
+    
+    }
+    /* div#logo.active {
+      transition: left .9s ease-in-out;
+      left: 39rem;
+
+    } */
+    .typing-demo {
+      margin-top: 2rem;
+      left: 37rem;
+      grid-row-start: 2;
+      width: 27ch;
+      animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-family: monospace;
+      font-size: 1rem;
+    }
+    .wrapper {
+      transition: left .9s ease-in-out;
+      left: -3rem;
+
+    }
+    .wrapper.active {
+      transition: left .9s ease-in-out;
+      left: 4rem;
 
     }
   
@@ -142,16 +250,64 @@ export default {
       width: fit-content;
       height: 20rem;
       border-left-width: 100rem;
-      left:-30.9rem;
+      left:-31.5rem;
       gap: 20px;
     
 
     }
+
+    div#intro {
+
+      /* margin-right: 35rem; */
+      left: 13.5rem;
+      grid-row-start: 2;
+      grid-column-end: 3;
+      width: 15rem;
+      height: 15rem;
+      background: #e3e3e3;
+      border-radius: 25px;
+      box-shadow: 10px 10px #142d4c;
+      text-align: center;
+      margin-top: 5rem;
+      }
+      .wrapper {
+          height: 15vh;
+          width: 39vh;
+          left:-3.5rem;
+          /*This part is important for centering*/
+          display: grid;
+          top:-5rem;
+          place-items: center;
+    }
+    .typing-demo {
+      margin-top: 2rem;
+      left: 37rem;
+      grid-row-start: 2;
+      width: 27ch;
+      animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-family: monospace;
+      font-size: 1rem;
+    }
+    .wrapper {
+      transition: left .9s ease-in-out;
+      left: -4rem;
+
+    }
+    .wrapper.active {
+      transition: left .9s ease-in-out;
+      left: 4rem;
+
+    }
+
 }
 
 @media (min-width: 481px) and (max-width: 767px){
   .box {
-      margin-top: 5rem;
+      margin-top: 2rem;
+      margin-bottom:2.8rem;
       display: grid;
       position: relative;
       grid-template-columns: auto auto auto;
@@ -167,7 +323,7 @@ export default {
       text-align: center;
       display: grid;
     }
-  div > #intro {
+  div#intro {
 
     /* margin-right: 35rem; */
       left: 36.9rem;
@@ -201,10 +357,25 @@ export default {
       height: 150px;
       top: -1.5rem;
       }
+      .logo-container { 
+        top:1rem;
+        grid-row-start: 1;
+      }
+      .wrapper {
+        height: 15vh;
+        width: 39vh;
+        left:1rem;
+        /*This part is important for centering*/
+        display: grid;
+        top:3rem;
+        place-items: center;
+    }
+
 }
 @media (min-width: 768px) and (max-width: 992px){
   .box {
-      margin-top: 5rem;
+      margin-top: 2rem;
+      margin-bottom: 5.5rem;
       display: grid;
       position: relative;
       grid-template-columns: auto auto auto;
@@ -254,6 +425,15 @@ export default {
       height: 150px;
       top: -1.5rem;
       }
+      .wrapper {
+        height: 15vh;
+        width: 39vh;
+        left:1rem;
+        /*This part is important for centering*/
+        display: grid;
+        top:3rem;
+        place-items: center;
+    }
 }
 
 </style>
