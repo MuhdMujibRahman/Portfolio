@@ -46,16 +46,16 @@ import linkedInvert from '@/assets/image/linkedin_2.png'
 
             </li>
         </ul>
-        <p>Copyright &copy; 2022</p>
+        <p :class="{darkmode: darkMode}">Copyright &copy; 2022</p>
         <ul>
-        <li class="credit">
+        <li class="credit" :class="{darkmode: darkMode}">
             <a href="https://www.flaticon.com/free-icons/coffee-maker" title="coffee maker icons">Coffee maker icons created by flatart_icons - Flaticon</a>
         </li>
-        <li class="credit">
+        <li class="credit" :class="{darkmode: darkMode}">
             <a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Dave Gandy - Flaticon</a>
         
         </li>
-        <li class="credit">
+        <li class="credit" :class="{darkmode: darkMode}">
             <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
         </li>
         </ul>
@@ -66,6 +66,9 @@ import linkedInvert from '@/assets/image/linkedin_2.png'
 <script>
 
 export default {
+  props : {
+    darkMode : Boolean,
+  },
     data () {
         return {
             github: github,
@@ -89,6 +92,10 @@ export default {
 </script>
 
 <style scoped>
+
+p.darkmode{
+  color: #e3e3e3;
+}
 
 a{
     color: #333;

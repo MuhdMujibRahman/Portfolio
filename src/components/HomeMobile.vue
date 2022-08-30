@@ -11,12 +11,12 @@
             <img :src="image" />
           </div>
           </div>
-          <div class="typing-demo">
+          <div class="typing-demo" :class="{darkmode: darkMode}">
             I have python for breakfast
           </div>
         </div>
-          <div id="intro">
-            <div class="intro-container">
+          <div id="intro" :class="{darkmode: darkMode}">
+            <div class="intro-container" >
             <p>Coming Soon !</p>
             <h1 id="title"> Something's brewing</h1>
             <img id="icon" :src="coffeMaker" />
@@ -30,6 +30,7 @@ export default {
   name: 'HomeMobile',
   props: {
       navBarIsActive: Boolean,
+      darkMode: Boolean,
     },
       data (){
         return {
@@ -42,7 +43,11 @@ export default {
     
 <style scoped>
 .typing-demo {
-  color: #385170;;
+  color: #385170;
+}
+.typing-demo.darkmode {
+  color: #ececec;
+  
 }
 @keyframes typing {
   from {width: 0}
@@ -114,6 +119,21 @@ export default {
       box-shadow: 10px 10px 4px #142d4c;
       text-align: center;
       margin-top: 5rem;
+    }
+
+    div#intro.darkmode {
+      /* margin-right: 35rem; */ 
+      background: #385170;
+      box-shadow: 10px 10px 4px #e3e3e3;
+    }
+    div#intro.darkmode p{
+      /* margin-right: 35rem; */ 
+      color: #e3e3e3;
+    }
+
+    div#intro.darkmode h1{
+      /* margin-right: 35rem; */ 
+      color: #e3e3e3;
     }
     
     p {
@@ -297,6 +317,9 @@ export default {
       transition: left .9s ease-in-out;
       left: 4rem;
 
+    }
+    #title{
+      left: -.1rem;
     }
 
 }

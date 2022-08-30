@@ -1,7 +1,11 @@
+<script setup>
+import ToggleDarkMode from '@/components/ToggleDarkMode.vue'
+</script>
+
 <template>
         <div id="menu-icon">
 		<a href="#" id="nav-toggle" 
-        :class="{ active: isActive }" 
+        :class="{ active: isActive, darkmode: darkMode }"
         @click="isActive = !isActive, 
         showNavBar = !showNavBar"
 		v-on:click="$emit('nav-click')"><span></span></a>
@@ -17,15 +21,20 @@
         
 		</div>
         </transition>
-
-
+		<ToggleDarkMode @darkMode-btn="$emit('darkmode-click')"/>
 </template>
 
 <script>
 
 export default {
 	name: 'NavBarMobile',
-	emits:['nav-click'],
+	emits:['nav-click','darkmode-click'],
+	props:{
+		darkMode: Boolean
+	},
+	components: {
+		ToggleDarkMode
+	},
     data(){
         return {
             showNavBar: false,
@@ -169,6 +178,11 @@ a.menu > a:hover {
 	height: 7px;
 	border-radius: 1px;
 	transition: all 500ms ease;
+}
+#nav-toggle.darkmode span , #nav-toggle.darkmode span:before , #nav-toggle.darkmode span:after{
+
+	background: #9fd3c7;
+
 }
 #nav-toggle span:before{
 	top: -10px;

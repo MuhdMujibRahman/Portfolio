@@ -7,14 +7,15 @@ import HomeMobile from '../components/HomeMobile.vue';
 
 <template>
   <HomeDesktop v-if="!mobileView"/>
-  <HomeMobile :navBarIsActive="navBarIsActive" v-if="mobileView"/>
+  <HomeMobile :navBarIsActive="navBarIsActive" v-if="mobileView" :darkMode="darkMode"/>
 </template>
 
 <script>
 export default {
   name: 'Home',
   props: {
-    navBarIsActive: Boolean
+    navBarIsActive: Boolean,
+    darkMode: Boolean
   },
   data (){
     return {

@@ -2,6 +2,8 @@
 <header>
   <NavBarMobile 
   @nav-click="$emit('toggle-nav-bar')"
+  @darkmode-click="$emit('toggle-dark-mode')"
+  :darkMode="darkMode"
   id="navigation-icon" v-if="mobileView"/>
   <NavBarDesktop v-if="!mobileView"/>
 </header>
@@ -11,7 +13,10 @@
 import NavBarDesktop from './NavBarDesktop.vue';
 import NavBarMobile from './NavBarMobile.vue';
   export default {
-    emits: ['toggle-nav-bar'],
+    emits: ['toggle-nav-bar','toggle-dark-mode'],
+    props: {
+      darkMode: Boolean
+    },
     data() {
         return {
             mobileView: false,
