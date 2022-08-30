@@ -188,9 +188,23 @@ body.day-background {
         cursor: default;
         position: absolute;
         top: 4.5vh;
-        left:38vh;
         margin-left: -76px;
         margin-top: -18px;
     }
 }
+@media (min-width: 768px) and (max-width: 992px){
+
+  .button-con {
+        cursor: default;
+        position: absolute;
+        top: 7.5vh;
+        left:90%;
+        margin-left: -76px;
+        margin-top: -18px;
+    }
+}
+@media (min-width: 992px){
+
+}
+
 </style>
