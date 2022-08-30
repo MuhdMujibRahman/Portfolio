@@ -67,12 +67,7 @@ export default {
       width: 150px;
       height: 150px;
       }
-    div#logo.active {
-      transition: left .9s ease-in-out, opacity .9s;;
-      left: 39rem;
-      opacity: .5;
 
-      }
     
     div > #intro {
 
@@ -126,6 +121,17 @@ export default {
     #title {
       grid-row: 3
     }
+
+@media only screen and (max-width: 380px){
+
+  div#logo.active {
+      transition: left .9s ease-in-out;
+      left: 39rem;
+
+    }
+  
+}
+
 @media only screen and (max-width: 480px) and (min-width: 381px){
 
     .box {
