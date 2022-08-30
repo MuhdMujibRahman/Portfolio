@@ -111,7 +111,7 @@ export default {
       height: 15rem;
       background: #e3e3e3;
       border-radius: 25px;
-      box-shadow: 10px 10px #142d4c;
+      box-shadow: 10px 10px 4px #142d4c;
       text-align: center;
       margin-top: 5rem;
     }
@@ -265,7 +265,6 @@ export default {
       height: 15rem;
       background: #e3e3e3;
       border-radius: 25px;
-      box-shadow: 10px 10px #142d4c;
       text-align: center;
       margin-top: 5rem;
       }
@@ -332,7 +331,6 @@ export default {
       height: 7rem;
       background: #e3e3e3;
       border-radius: 25px;
-      box-shadow: 10px 10px #142d4c;
       text-align: center;
   /* margin-top: 5rem; */
   }
@@ -400,7 +398,6 @@ export default {
       height: 7rem;
       background: #e3e3e3;
       border-radius: 25px;
-      box-shadow: 10px 10px #142d4c;
       text-align: center;
   /* margin-top: 5rem; */
   }
