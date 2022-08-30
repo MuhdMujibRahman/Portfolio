@@ -41,7 +41,9 @@ export default {
 </script>
     
 <style scoped>
-
+.typing-demo {
+  color: #385170;;
+}
 @keyframes typing {
   from {width: 0}
 }
