@@ -188,6 +188,7 @@ body.day-background {
         cursor: default;
         position: absolute;
         top: 4.5vh;
+        left: 82%;
         margin-left: -76px;
         margin-top: -18px;
     }
