@@ -183,7 +183,7 @@ export default {
       left: 37rem;
       grid-row-start: 2;
       width: 27ch;
-      animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+      -webkit-animation: typing 2s steps(20), blink .5s step-end infinite alternate;
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid;
@@ -226,7 +226,7 @@ export default {
       left: 37rem;
       grid-row-start: 2;
       width: 27ch;
-      animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+      -webkit-animation: typing 2s steps(20), blink .5s step-end infinite alternate;
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid;
@@ -290,7 +290,7 @@ export default {
       left: 37rem;
       grid-row-start: 2;
       width: 27ch;
-      animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+      -webkit-animation: typing 2s steps(20), blink .5s step-end infinite alternate;
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid;
