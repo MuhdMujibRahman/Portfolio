@@ -249,7 +249,7 @@ export default {
       width: fit-content;
       height: 20rem;
       border-left-width: 100rem;
-      left:-58.5vh;
+      left:-60.5vh;
       gap: 20px;
     
 
