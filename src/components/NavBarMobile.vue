@@ -12,7 +12,7 @@ import ToggleDarkMode from '@/components/ToggleDarkMode.vue'
 		</div>
         <transition name="fade" mode="out-in">
             <div id="nav" :class="{ active : showNavBar}">
-            <nav class="navMenu" :class="{ active : showNavBar}">
+            <nav class="navMenu" :class="{ active : showNavBar, darkmode : darkMode}" >
                 <a class="menu"><router-link to="/">Home</router-link></a>
                 <a class="menu"><router-link to="">Blog</router-link></a>
                 <a class="menu"><router-link to="">About</router-link></a>
@@ -109,10 +109,18 @@ body{
   width: 80px;
   margin: 10px;
 }
+.navMenu.darkmode a {
+  color: #9fd3c7;
+}
 
 a.menu > a:hover {
   color: #9fd3c7;
 }
+
+.navMenu.darkmode a.menu > a:hover {
+  color: #ececec;
+}
+
 
 /* .navMenu .dot {
   width: 6px;
