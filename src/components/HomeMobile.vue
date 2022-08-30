@@ -46,10 +46,16 @@ export default {
   from {
     width: 0
   }
+  to {
+    width: 17rem
+  }
 }
     
 @-webkit-keyframes blink {
   50% {
+    border-color: transparent
+  }
+  100% {
     border-color: transparent
   }
 }
