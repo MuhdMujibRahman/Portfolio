@@ -42,13 +42,13 @@ export default {
     
 <style scoped>
 
-@keyframes typing {
+@-webkit-keyframes typing {
   from {
     width: 0
   }
 }
     
-@keyframes blink {
+@-webkit-keyframes blink {
   50% {
     border-color: transparent
   }
