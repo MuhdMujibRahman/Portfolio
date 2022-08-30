@@ -43,21 +43,12 @@ export default {
 <style scoped>
 
 @-webkit-keyframes typing {
-  from {
-    width: 0
-  }
-  to {
-    width: 17rem
-  }
+  from {width: 0}
 }
     
 @-webkit-keyframes blink {
-  50% {
-    border-color: transparent
-  }
-  100% {
-    border-color: transparent
-  }
+  50% {border-color: transparent}
+  100% {border-color: transparent}
 }
     .wrapper {
       height: 15vh;
