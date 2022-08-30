@@ -154,7 +154,8 @@
     #title {
       grid-row: 3
     }
-    @media only screen and (min-width: 992px) and (max-width: 1200px){
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
       .box {
         margin-top: .5rem;
         display: gird;
@@ -166,20 +167,27 @@
         left:-7.5rem;
         gap: 20px;
     }
-        
-    div #logo {
+
+    .wrapper {
+      height: 45vh;
+      left:6rem;
+      /*This part is important for centering*/
+      display: grid;
+      place-items: center;
+    }
+
+    div#logo {
       /* right: 47rem; */
-      left: 10rem;
       width: 150px;
       height: 150px;
       }
 
-      div > #intro {
+      div#intro {
       /* margin-right: 35rem; */
-      left: 5rem;
+      left: 42%;
       grid-row-start: 1;
       grid-column: 3;
-      width:30rem;
+      width:40rem;
       height: 8.5rem;
       background: #e3e3e3;
       border-radius: 25px;
@@ -195,7 +203,7 @@
     }
     
     h1 {
-      font-size: 2rem;
+      font-size: 3rem;
     }
 
 
@@ -209,6 +217,7 @@
     }
 
     }
+
 
   
     </style>

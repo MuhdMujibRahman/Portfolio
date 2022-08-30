@@ -410,47 +410,62 @@ export default {
       text-align: center;
       display: grid;
     }
-  div > #intro {
+  div#intro {
 
     /* margin-right: 35rem; */
-      left: 36.9rem;
-      grid-row-start: 1;
+      left: 5rem;
+      grid-row-start: 3;
       grid-column:3;
       width: 25rem;
-      height: 7rem;
+      height: 24.5rem;
       background: #e3e3e3;
       border-radius: 25px;
       text-align: center;
-  /* margin-top: 5rem; */
+      margin-top: 9rem;
   }
-  #icon {
+    #icon {
       margin-top: 10px;
-      margin-left: 15px;
-      width: 40px;
-      height: 40px;
-      grid-row: 3;
+      margin-left: 137px;
+      width: 125px;
+      height: 125px;
+      grid-row: 4;
+    ;
     }
         
     #title {
       grid-row: 3
     }
-    div #logo {
-      grid-row-start: 1;
-      grid-column-end: 3;
-      /* right: 47rem; */
+  
+    .typing-demo {
+      margin-top: 2rem;
       left: 37rem;
-      width: 150px;
-      height: 150px;
-      top: -1.5rem;
-      }
-      .wrapper {
+      grid-row-start: 2;
+      width: 27ch;
+      animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-family: monospace;
+      font-size: 1rem;
+   }
+   .wrapper {
+      transition: left .9s ease-in-out;
+      left: 5rem;
         height: 15vh;
         width: 39vh;
-        left:1rem;
         /*This part is important for centering*/
         display: grid;
         top:3rem;
         place-items: center;
+    }
+
+    h1 {
+    
+    font-size: 3rem;
+  }
+  p {
+        font-size: 1.5rem;
+      
     }
 }
 

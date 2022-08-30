@@ -96,7 +96,7 @@
     margin: 25px;
     width: 100rem;
     height: 5rem;
-    left:-19rem;
+    left:-12rem;
     /* Setup */
     position: relative;
 }
