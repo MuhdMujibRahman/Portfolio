@@ -42,11 +42,11 @@ export default {
     
 <style scoped>
 
-@-webkit-keyframes typing {
+@keyframes typing {
   from {width: 0}
 }
     
-@-webkit-keyframes blink {
+@keyframes blink {
   50% {border-color: transparent}
   100% {border-color: transparent}
 }
@@ -174,7 +174,7 @@ export default {
       left: 37rem;
       grid-row-start: 2;
       width: 27ch;
-      -webkit-animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+      animation: typing 2s steps(20), blink .5s step-end infinite alternate;
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid;
@@ -217,7 +217,7 @@ export default {
       left: 37rem;
       grid-row-start: 2;
       width: 27ch;
-      -webkit-animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+      animation: typing 2s steps(20), blink .5s step-end infinite alternate;
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid;
@@ -281,7 +281,7 @@ export default {
       left: 37rem;
       grid-row-start: 2;
       width: 27ch;
-      -webkit-animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+      animation: typing 2s steps(20), blink .5s step-end infinite alternate;
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid;
