@@ -27,3 +27,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Credits
+- Dark mode toggle created by [Joseph Shenton @TeamiHackify](https://codepen.io/JosephShenton/pen/YqVoJB)
+- [Linkedin flat icon](https://www.flaticon.com/free-icons/linkedin)
+- [Github flat icon](https://www.flaticon.com/free-icons/cat)
+- [Coffe maker flat icon](https://www.flaticon.com/free-icons/coffee-maker)
