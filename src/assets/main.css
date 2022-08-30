@@ -17,7 +17,7 @@ body {
 }
 
 #app{
-  height:auto; margin:0;
+  height:100vh; margin:0;
   display: flex;
   flex-direction:column; 
   background: #ececec;
@@ -54,7 +54,7 @@ body {
     font-family: "Montserrat", sans-serif;
   }
   #app{
-    height:auto; margin:0;
+    height:100vh; margin:0;
     display: flex;
     flex-direction:column; 
     background: #ececec;
@@ -62,6 +62,16 @@ body {
   }
 
 }
+@media (min-width: 481px) and (max-width: 767px){
+	#app{
+    height:auto; margin:0;
+    display: flex;
+    flex-direction:column; 
+    background: #ececec;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 992px){
 	#app{
     height:auto; margin:0;
