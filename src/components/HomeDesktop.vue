@@ -80,6 +80,7 @@
       border-right: 3px solid;
       font-family: monospace;
       font-size: 1.5rem;
+      color: #385170;
 }
     .box {
       margin-top: -3rem;
