@@ -249,7 +249,7 @@ export default {
       width: fit-content;
       height: 20rem;
       border-left-width: 100rem;
-      left:-31.5rem;
+      left:-55vh;
       gap: 20px;
     
 
@@ -258,7 +258,8 @@ export default {
     div#intro {
 
       /* margin-right: 35rem; */
-      left: 14.5rem;
+      margin-left: -4.5rem;
+      margin-right: 10rem;
       grid-row-start: 2;
       grid-column-end: 3;
       width: 15rem;
