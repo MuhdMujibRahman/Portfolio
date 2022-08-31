@@ -13,8 +13,8 @@ import DownloadBtn from "@/components/DownloadBtn.vue";
                 <p>Mujib Nizar</p>
             </div>
             <div class="intro-txt">
-                <p>A Python developer currenlty working in financial sector, 
-                    experience in API development using Django and Flask</p>
+                <p>A Python developer currently working in financial sector, 
+                    experienced in API development using Django and Flask</p>
             </div>
             <DownloadBtn/>
         </div>

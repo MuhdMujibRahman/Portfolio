@@ -16,7 +16,7 @@
 }
 button {
   margin: 20px;
-  left:-18rem;
+  left:-15rem;
 }
 .custom-btn {
   width: 130px;
