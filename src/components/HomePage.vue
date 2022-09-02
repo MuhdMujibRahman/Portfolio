@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
 .home-cointainer {
-    left:15rem; top: 10rem;
+    left:15rem; top: 5rem;
     width: 100vh;
     display: grid;
     font-family: 'Roboto',sans-serif;

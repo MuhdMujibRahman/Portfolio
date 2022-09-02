@@ -9,7 +9,7 @@ import HomePage from '@/components/HomePage.vue';
 <template>
   <!-- <HomeDesktop v-if="!mobileView"/> -->
   <HomeMobile :navBarIsActive="navBarIsActive" v-if="mobileView" :darkMode="darkMode"/>
-  <HomePage/>
+  <HomePage v-if="!mobileView"/>
 </template>
 
 <script>
