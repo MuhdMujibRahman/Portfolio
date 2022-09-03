@@ -54,8 +54,9 @@ export default {
 }
 
 .hi-txt{
-    color: #2983be;
-    font-size:2rem;
+    font-family: 'Oooh Baby', cursive;
+    color: #428fe6;
+    font-size:2.5rem;
     font-weight:700;
     
 }

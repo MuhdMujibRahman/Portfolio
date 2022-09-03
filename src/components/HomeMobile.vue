@@ -88,7 +88,7 @@ export default {
     }
     
     .box > div {
-      /* background-color: rgba(255, 255, 255, 0.8); */
+      /* background-color: background: red; rgba(255, 255, 255, 0.8); */
       padding: 20px 0;
       font-size: 30px;
       margin-top: 1rem;

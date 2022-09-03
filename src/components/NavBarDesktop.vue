@@ -2,7 +2,7 @@
     <div class="container">
       <nav class="navMenu">
         <router-link to="/">Home</router-link>
-        <router-link to="">About</router-link>
+        <router-link to="/About">About</router-link>
         <router-link to="">Hire</router-link>
         <router-link to="">Work</router-link>
       <div class="dot"></div>
