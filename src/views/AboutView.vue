@@ -1,6 +1,7 @@
 <script setup>
   import HomePage from "@/components/HomePage.vue";
   import ExperiencePage from "@/components/ExperiencePage.vue";
+import LanguageAndTools from "../components/LanguageAndTools.vue";
 </script>
 
 <template>
@@ -17,8 +18,11 @@
     
     </div>
     </div>
+    <div class="bottompage">
+      <ExperiencePage/> 
+      <LanguageAndTools/>
+    </div>
     
-    <ExperiencePage/>
     
   </div>
 
@@ -30,7 +34,8 @@ export default {
   name: "About",
   components: {
     HomePage,
-    ExperiencePage
+    ExperiencePage,
+    LanguageAndTools
   },
 }
 </script>
@@ -44,8 +49,10 @@ export default {
   0%{left:15rem;}
   
 }
+.bottompage {
+  display: grid;
+}
 .aboutpage{
-  top:2.5rem;
   min-height:200vh;
   display: block;
 }
@@ -67,6 +74,7 @@ export default {
 }
 
 .about {
+  top:5rem;
   left:50rem;  
   width: 80vh;
   height: 25vh;

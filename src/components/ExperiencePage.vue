@@ -14,7 +14,7 @@
                         <span class="flag">Payments Network Malaysia</span>
                         <span class="time-wrapper"><span class="time">2022 - present</span></span>
                     </div>
-                    <div class="desc">My current employment. Way better than the position before!</div>
+                    <div class="desc"> Developed an automated solutioning to support both strategic and tactical plans, which includes operations and engineering.</div>
                 </div>
             </li>
         
@@ -25,7 +25,7 @@
                         <span class="flag">TM Research & Development</span>
                         <span class="time-wrapper"><span class="time">2020 - 2022</span></span>
                     </div>
-                    <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+                    <div class="desc">Measure and optimize system performance, with an eye toward pushing our capabilities forward, getting ahead of customer needs, and innovating to continually improve.</div>
                 </div>
             </li>
 
@@ -33,13 +33,22 @@
             <li>
                 <div class="direction-r">
                     <div class="flag-wrapper">
-                        <span class="flag">Harvard University</span>
-                        <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+                        <span class="flag">Accenture</span>
+                        <span class="time-wrapper"><span class="time">2020 - 2020</span></span>
                     </div>
                     <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
                 </div>
             </li>
-        
+        <!-- Item 4 -->
+        <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">Vision Technology Consulting</span>
+                        <span class="time-wrapper"><span class="time">2018 - 2019</span></span>
+                    </div>
+                    <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+                </div>
+            </li>
         </ul>
 
     </div>
